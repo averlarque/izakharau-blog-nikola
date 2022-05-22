@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html prefix="" lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>Definition of API requirements | IZAKHARAU.ME</title>
+<link href="../../assets/css/all.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=PT+Serif:400,400italic,700%7CPT+Sans:400">
+<link rel="alternate" type="application/rss+xml" title="RSS" href="../../rss.xml">
+<link rel="canonical" href="https://izakharau.me/posts/definition-of-api-requirements/">
+<!--[if lt IE 9]><script src="../../assets/js/html5.js"></script><![endif]--><meta name="author" content="Ilya Zakharau">
+<link rel="next" href="../backward-compatibility/" title="“Backward awkwardability” or how to break compatibility and stop worrying" type="text/html">
+<meta property="og:site_name" content="IZAKHARAU.ME">
+<meta property="og:title" content="Definition of API requirements">
+<meta property="og:url" content="https://izakharau.me/posts/definition-of-api-requirements/">
+<meta property="og:description" content="At some point in my career, I faced a need to specify requirements for API. Those were not typical solution requirements I worked on before. I learned about the API layer which is very common among th">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2021-03-30T01:00:00+02:00">
+</head>
+<body class="theme-base-0c">
+    <a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
+    <!-- Target for toggling the sidebar `.sidebar-checkbox` is for regular
+            styles, `#sidebar-checkbox` for behavior. -->
+    <input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox"><!-- Toggleable sidebar --><div class="sidebar" id="sidebar">
+        <div class="sidebar-item">
+            <p><b>Personal essays about Product Development &amp; Analysis of the Enterprise systems</b></p>
+        </div>
+        
+    <nav id="menu" role="navigation" class="sidebar-nav"><a class="sidebar-nav-item" href="pages/about">About</a>
+        <a class="sidebar-nav-item" href="../../categories/">Categories</a>
+        <a class="sidebar-nav-item" href="../../archive.html">Archive</a>
+        <a class="sidebar-nav-item" href="../../rss.xml">RSS feed</a>
+    
+    
+    </nav>
+</div>
+
+    <!-- Wrap is the content to shift when toggling the sidebar. We wrap the
+         content to avoid any CSS collisions with our real content. -->
+    <div class="wrap">
+      <div class="masthead">
+        <div class="container">
+          
+    <h3 id="brand" class="masthead-title">
+      <a href="https://izakharau.me/" title="IZAKHARAU.ME" rel="home">IZAKHARAU.ME</a>
+    </h3>
+
+        </div>
+      </div>
+
+      <div class="container content" id="content">
+        
+<article class="post-text h-entry hentry postpage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="post-title p-name entry-title" itemprop="headline name"><a href="." class="u-url">Definition of API requirements</a></h1>
+
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn">Ilya Zakharau</span></p>
+            <p class="dateline"><a href="." rel="bookmark"><time class="post-date published dt-published" datetime="2021-03-30T01:00:00+02:00" itemprop="datePublished" title="2021-03-30 01:00">2021-03-30 01:00</time></a></p>
+        </div>
+        
+
+    </header><div class="e-content entry-content" itemprop="articleBody text">
+    <p><img src="../../images/api.jpg" width="90%" alt="API" style="vertical-align:middle;margin:1% 1%"><br>
+At some point in my career, I faced a need to specify requirements for API. Those were not typical solution requirements I worked on before. I learned about the API layer which is very common among the enterprise systems. It can hide a set of microservices or a legacy system from the outer world. Like any other system, it is also impacted by stakeholders' needs. And those needs have to be translated into requirements.</p>
+<p>We are going to decompose the definition of API requirements and see what lies within. I will pay your attention to what should be taken into consideration for the API layer. It is an introduction to this topic as there are other sides of it to explore further.</p>
+<!-- TEASER_END -->
+
+<p>We are not going to talk about implementation types of API such as REST, RPC, GraphQL, etc. Ideally, requirements should not be tied to the technical implementation and that rule works here as well.</p>
+<p>I have been working more with REST and REST-like APIs. Like most of you, I believe. However, I think my experience can be applied to other types as well. Considering some specifics, of course. But those are not covered here.</p>
+<h3>Why You Don't Need API Requirements</h3>
+<p>Before we start you need to ask yourself:</p>
+<p><strong>Do I need to write and maintain requirements for API?</strong></p>
+<p>As a System or Business analyst, you don't need to proceed with them if the API is used only within your service. In that case, it is a part of the provided functionality.</p>
+<p>You can define a user story describing acceptance criteria with a bunch of functional, quality (non-functional) requirements, and attach UI wireframes. That is all about expected outcomes to be reflected on a UI and/or in data. API is something in-between that you don't need to care about. It is a part of technical design managed by the engineering team with the main purpose to address the requirements.</p>
+<p>But if your API is publicly exposed you need to consider interests of other parties. Those parties can be split into two big categories:</p>
+<ul>
+<li>Other teams within your organization.</li>
+<li>Customers and partners outside your organization.</li>
+</ul>
+<p>Despite obvious differences between them, they both need your service to reach their own business goals. Each party has its context under which your service is used and a particular integration approach. Thus you need to consider them as stakeholders and address their concerns to provide great customer experience.</p>
+<p>It is important to separate the functional requirements from API ones. API requirements are not about introducing new or improving current functionality. That is about providing the right way to use that functionality. So we identify the <strong>back-end</strong> as a functional piece and <strong>API</strong> as a gateway to access that functionality provided by the aforesaid.</p>
+<h3>Terms &amp; Definitions</h3>
+<p>One more step before we go forward. Let us clarify some concepts and align on the terms used below.</p>
+<p><strong>API</strong>
+is translated as "Application Programmable Interface" but that does not give you a key without a Computer Science degree. For my "Bachelor of Arts" fellows, the main word here is an "Interface". Generally, your mouth and tongue are an interface for speech communication. Your fingers are an interface to type text on your keyboard for written communication. The same is applied to the software in which classes and instances communicate with each other in some strictly formalized way.</p>
+<p>API is a very broad term. Here we talk about the gateway through which your service communicates with the outside world.</p>
+<p><strong>API endpoint</strong>
+is a single instance of API with a unique address (URL). Sending a required input to that URL triggers some command within your system and returns an output about a successful result or failure.</p>
+<p>Example:
+<code>POST https://ecomplatform/api/v1/purchases/{purchaseId}/cancel</code></p>
+<p><strong>API call</strong>
+is a process of sending a request to an API endpoint and getting a response.</p>
+<p><strong>Client</strong>
+is a general term to identify someone or something that is using your API.</p>
+<h3>API Definition</h3>
+<h4>What &amp; Why</h4>
+<p>To provide the right API endpoint your need to understand:</p>
+<ul>
+<li>What is that API doing?</li>
+<li>Why is it required?</li>
+</ul>
+<p>The first question seems to be an easy one. Usually, there are data objects of some Entity that we can access and conduct some action with them. The basic actions are Create, Read, Update, Delete (CRUD) operations. Even some specific actions are just about changing some information in a data object.</p>
+<p>For example, our API endpoint should cancel a purchase in a store. A "Purchase" is an object and "cancel" is a required action. It is a single purchase so we need:
+a) make sure how we identify a right Purchase to cancel;
+b) how we proceed with the cancellation.</p>
+<p>Cancellation can mean an actual deletion (bad idea) or an update (good idea) of a Purchase data object. Changing a state of an object might trigger a chain of information updates elsewhere in the system. You should be aware about the business logic. Either it is triggered automatically or you need to make additional API calls to complete that action.</p>
+<p>The second question is more complex. An API call is a non-visible participant of the interaction between a user and the system (i.e. Use Case). One call can participate in several use cases with each having its context. You might cover each context with a separate API endpoint or craft the one to rule them all. That is a question of implementation. The main thing here is that you need to understand those contexts.</p>
+<p>Again, it is easier to own the context when it is all about systems within your organization. But when API goes outside and customer success is relying on that, it is difficult to consider all possible contexts which may appear.</p>
+<p>You lack control over how APIs are used. You can define the rules, provide some documentation, and hope that will work. Just be prepared that problems occur where no one expects them to be.</p>
+<h4>Prerequisites</h4>
+<p>Now we know why we build our API endpoint and what it does. Next step to define what conditions need to be satisfied to make that call. In most cases we talk here about authentication and authorization:</p>
+<ul>
+<li>Authentication is about verifying a client and giving them the possibility to communicate with your service.</li>
+<li>Authorization is about permission to allow certain clients to make particular API requests.</li>
+</ul>
+<p>Authentication is usually managed on a higher level considering an API layer itself. The specific API endpoint is likely to follow that approach. But if there is an exception from that rule, such requirements need to be considered.</p>
+<p>Permissions are usually managed on the back-end side. But some constraints may be imposed on the API layer as well. You can proceed with different API endpoints which are doing the same thing but for different roles, considering business restrictions.</p>
+<p>For example: canceling a Purchase by a Customer and canceling a Purchase by an Admin. Same action but with two different contexts. Let us assume that an Admin can skip some validation steps in business logic to cancel a Customer's Purchase in a simplified way. When designing an API endpoint you need to make sure that dangerous power will be used only by Admins. There are a dozen ways of handling this but that requirement should not be missed.</p>
+<h4>API Call</h4>
+<p>Now we are ready to design our API endpoint. Its definition consists of two things:</p>
+<ul>
+<li>API Contract for Request and Response</li>
+<li>Request logic</li>
+</ul>
+<p><img src="../../images/API_definition.png" width="90%" alt="API Definition" style="vertical-align:middle;margin:1% 1%"><br></p>
+<h5>API Request Contract</h5>
+<p>API contract is an agreement about expected input and outcome between you and your clients. Communication via API is strictly formalized and clients accept to follow the provided format. They accept it by default when starting using your API. The API owner takes responsibility to follow the contract obligations by maintaining the operability of the service and consistency of the contract itself.</p>
+<p>For input, you expect clients to provide required and optional parameters. Required parameters usually identify objects or a set of homogeneous objects to access or modify them. The optional is used to modify expected responses and provide additional information.</p>
+<p>Generally, input parameters can be provided in a few ways:</p>
+<ul>
+<li>
+<strong>Manual user input</strong>
+When a User submits manually-typed information on the client-side passing directly to API.</li>
+<li>
+<strong>Context-provided input</strong>
+When the request is taken or combined from responses of preceding API calls made in that particular Use Case.</li>
+</ul>
+<p>From a technical perspective, there is no difference in how request parameters are provided. But that should be considered during the analysis.</p>
+<p>For example, you need to request a single Purchase. First, you find out what ID should be used to load a Purchase object. In “bloody” enterprise systems, there are always several identifiers for the same objects in different contexts. Let us assume a Purchase entity has Business ID as something human-readable and System ID as a hashcode.</p>
+<p>Our API endpoint asks for System ID to get Purchase details. That is OK, but what if clients expect their customers to manually enter a Purchase ID for some verification on that step of a Use Case?</p>
+<p>I would expect you to ask a question "How did a Customer get that ID before?" Let it be available on a bill and now a Customer wants to see Purchase details without being authenticated in the app. And providing System ID on that is not an option. Only if the customer suffering is a part of UX design.</p>
+<p>We can quickly consider a workaround by making a Purchase search request with Business ID, then extract a System ID from a found Purchase and make a call for Purchase details. Fine if you can use search for that purpose. But your clients need to make two API calls instead of one.</p>
+<p>Again, there are dozens of ways to handle such cases. This is just an illustration of how simple things might become surprisingly complex.</p>
+<h5>Request Logic</h5>
+<p>When clients send a request to API then something should happen. Either we get a successful response or an error, some work is done beneath. We can consider:</p>
+<ul>
+<li>
+<strong>"Simple"</strong> request
+Making one call to the back-end with basic CRUD operation to a data object of a single Entity.</li>
+<li>
+<strong>"Composite"</strong> request
+Making a chain of calls to one or several back-end services with a few Entities involved. That means you are hiding that complexity from the clients. Otherwise, they would be forced to do all those operations and transformations by themselves with a high risk of doing something wrong.</li>
+</ul>
+<p>You need to define a sequence of steps on how that chain will work. It is important to consider accessibility, especially if third-parties services are involved. And what kind of request is passed for each call and how each response should be processed.</p>
+<p>Don't forget about non-functional stuff: maintaining overall performance and sustainability. More steps we have in a sequence - the higher probability of a failure. You need to consider different "bad" scenarios: long response time, bad data, downtime, etc. Even if such "edge" cases seem to be unreal you should consider them. Even you can't cover them all due to time and financial restrictions.</p>
+<p>Whether you call other services within your organization or a third-party, now you are in the client’s shoes. You agree with the contract hoping both parties are going to follow their commitment. If you can somehow impact other services inside your organization by forcing them to follow or change the contract, for third-parties and vendors that can be problematic. Only if you have the leverage to make them but that is not always the case in real life. Anyway, all that should be considered when you are defining a composite API call.</p>
+<h5>API Response Contract</h5>
+<p>For a successful call, an API endpoint returns a response with some amount of information. That can be all information about a data object or just a message that information about that object has been updated. It is a matter of request type and endpoint design.</p>
+<p>You need to consider that the data model stored in your database is not the same as the data model provided to the clients via API. B First, there can be some differences in data types used. Secondly, there is no need to expose all attributes you have in the data model via API. There is always some information you don't want to share with some types of users.</p>
+<p>Providing expected outcomes is a part of the Contract. So the information should correspond to clients' goals and expected format. Sometimes you need to transform the data originally provided by the back-end. That can be localization to a different language, another date format, currency conversion, combining data objects of different entities, adapting data from third-party providers, etc. Data mapping is the right requirement artifact to keep that important information.</p>
+<h2>Epilogue</h2>
+<p>That is just a basic overview of what is beneath the API layer. We are not touching specific implementation and possible format of API specification and documentation. Hopefully, we will investigate those topics in the future.</p>
+    </div>
+    <aside class="postpromonav"><nav><ul class="pager hidden-print">
+<li class="next">
+                <a href="../backward-compatibility/" rel="next" title="“Backward awkwardability” or how to break compatibility and stop worrying">Next post</a>
+            </li>
+        </ul></nav></aside></article><footer id="footer"><p>Contents © 2022         <a href="mailto:ilya.zakharau@gmail.com">Ilya Zakharau</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         
+<a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">
+<img alt="Creative Commons License BY-NC-SA" style="border-width:0; margin-bottom:12px;" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png"></a></p>
+            
+        </footer>
+</div>
+    </div>
+    <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+    
+    
+    
+            <script src="../../assets/js/all-nocdn.js"></script><!-- fancy dates --><script>
+    moment.locale("en");
+    fancydates(0, "YYYY-MM-DD HH:mm");
+    </script><!-- end fancy dates -->
+</body>
+</html>

@@ -1,0 +1,4 @@
+Sitemap: https://izakharau.me/sitemapindex.xml
+
+User-Agent: *
+Host: izakharau.me
