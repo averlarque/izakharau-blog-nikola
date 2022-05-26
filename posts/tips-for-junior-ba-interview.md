@@ -1,7 +1,7 @@
 <!--
 .. title: Tips for Junior BA before going to interview
 .. slug: tips-for-junior-ba-interview
-.. date: 2022-02-06 01:00:00 UTC+02:00
+.. date: 2022-02-06 19:05
 .. tags: 
 .. category: Career Path
 .. link: 

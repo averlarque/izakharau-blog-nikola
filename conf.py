@@ -25,7 +25,7 @@ SITE_URL = "https://izakharau.me/"
 # If not set, defaults to SITE_URL
 # BASE_URL = "https://izakharau.me/"
 BLOG_EMAIL = "ilya.zakharau@gmail.com"
-BLOG_DESCRIPTION = "Personal essays about Product Development & Analysis of the Enterprise systems"  # (translatable)
+BLOG_DESCRIPTION = "Personal essays about Product Management & Business Analysis in the Enterprise world"  # (translatable)
 
 # Nikola is multilingual!
 #
@@ -142,10 +142,13 @@ TRANSLATIONS_PATTERN = '{path}.{lang}.{ext}'
 
 NAVIGATION_LINKS = {
     DEFAULT_LANG: (
-        ("pages/about", "About"),
+        ("/", "Main"),
+        ("/pages/about", "About"),
         ("/categories/", "Categories"),
         ("/archive.html", "Archive"),
-        ("/rss.xml", "RSS feed")
+        ("/rss.xml", "RSS feed"),
+        ("https://www.linkedin.com/in/ilya-zakharau/", "My LinkedIn"),
+        ("https://github.com/averlarque", "My GitHub")
     ),
 }
 
@@ -659,7 +662,12 @@ ATOM_FILENAME_BASE = "feed"
 # relative URL.
 #
 # If you don't need any of these, just set to []
-REDIRECTIONS = []
+REDIRECTIONS = [
+    ("product management/2022/05/09/product-manager-year-one.html", "/posts/product-manager-year-one/"),
+    ("business analysis/2022/02/05/tips-junior-ba-interview.html", "/posts/tips-for-junior-ba-interview/"),
+    ("product ownership/2021/04/25/backward-compatibility.html", "/posts/backward-compatibility/"),
+    ("system analysis/2021/03/29/definition-of-api-requirements.html", "/posts/definition-of-api-requirements/")
+]
 
 # Presets of commands to execute to deploy. Can be anything, for
 # example, you may use rsync:
@@ -1404,11 +1412,24 @@ WARN_ABOUT_TAG_METADATA = False
 # those.
 # TEMPLATE_FILTERS = {}
 
+ANALYTICS = """
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-SPLFYJKKZG"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-SPLFYJKKZG');
+</script>
+"""
+
 # Put in global_context things you want available on all your templates.
 # It can be anything, data, functions, modules, etc.
 GLOBAL_CONTEXT = {
         "lanyon_subtheme": "theme-base-0c",
-        "blg_description": BLOG_DESCRIPTION
+        "blg_description": BLOG_DESCRIPTION,
+        "google_analytics": ANALYTICS
     }
 
 # Add functions here and they will be called with template
