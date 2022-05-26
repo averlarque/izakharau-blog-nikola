@@ -1,7 +1,7 @@
 <!--
 .. title: “Backward awkwardability” or how to break compatibility and stop worrying
 .. slug: backward-compatibility
-.. date: 2021-04-26 01:00:00 UTC+02:00
+.. date: 2021-04-26 15:30
 .. tags: 
 .. category: Product Development
 .. link: 

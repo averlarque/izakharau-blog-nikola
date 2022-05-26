@@ -1,7 +1,7 @@
 <!--
 .. title: Product Manager: Year One
 .. slug: product-manager-year-one
-.. date: 2022-05-10 01:00:00 UTC+02:00
+.. date: 2022-05-10 09:30
 .. tags: 
 .. category: Product Management
 .. link: 
