@@ -7,66 +7,70 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <url>
   <loc>https://izakharau.me/</loc>
-  <lastmod>2022-05-26T15:55:00Z</lastmod>
+  <lastmod>2022-06-15T20:03:00Z</lastmod>
  </url>
  <url>
   <loc>https://izakharau.me/2021/</loc>
-  <lastmod>2022-05-22T12:28:00Z</lastmod>
+  <lastmod>2022-06-15T20:03:00Z</lastmod>
  </url>
  <url>
   <loc>https://izakharau.me/2022/</loc>
-  <lastmod>2022-05-22T12:28:00Z</lastmod>
+  <lastmod>2022-06-15T20:03:00Z</lastmod>
  </url>
  <url>
   <loc>https://izakharau.me/archive.html</loc>
-  <lastmod>2022-05-26T20:10:00Z</lastmod>
+  <lastmod>2022-06-15T20:03:00Z</lastmod>
  </url>
  <url>
   <loc>https://izakharau.me/categories/</loc>
-  <lastmod>2022-05-22T12:28:00Z</lastmod>
+  <lastmod>2022-06-15T20:03:00Z</lastmod>
  </url>
  <url>
   <loc>https://izakharau.me/categories/cat_career-path/</loc>
-  <lastmod>2022-05-22T12:28:00Z</lastmod>
+  <lastmod>2022-06-15T20:03:00Z</lastmod>
  </url>
  <url>
   <loc>https://izakharau.me/categories/cat_product-development/</loc>
-  <lastmod>2022-05-22T12:28:00Z</lastmod>
+  <lastmod>2022-06-15T20:03:00Z</lastmod>
  </url>
  <url>
   <loc>https://izakharau.me/categories/cat_product-management/</loc>
-  <lastmod>2022-05-22T12:28:00Z</lastmod>
+  <lastmod>2022-06-15T20:03:00Z</lastmod>
  </url>
  <url>
   <loc>https://izakharau.me/categories/cat_system-analysis/</loc>
-  <lastmod>2022-05-22T12:28:00Z</lastmod>
+  <lastmod>2022-06-15T20:03:00Z</lastmod>
  </url>
  <url>
   <loc>https://izakharau.me/galleries/</loc>
-  <lastmod>2022-05-22T12:28:00Z</lastmod>
+  <lastmod>2022-06-15T20:03:00Z</lastmod>
  </url>
  <url>
   <loc>https://izakharau.me/listings/</loc>
-  <lastmod>2022-05-22T12:28:00Z</lastmod>
+  <lastmod>2022-06-15T20:03:00Z</lastmod>
  </url>
  <url>
   <loc>https://izakharau.me/pages/about/</loc>
-  <lastmod>2022-05-22T19:58:00Z</lastmod>
+  <lastmod>2022-06-15T20:03:00Z</lastmod>
  </url>
  <url>
   <loc>https://izakharau.me/posts/backward-compatibility/</loc>
-  <lastmod>2022-05-22T12:28:00Z</lastmod>
+  <lastmod>2022-06-15T20:03:00Z</lastmod>
  </url>
  <url>
   <loc>https://izakharau.me/posts/definition-of-api-requirements/</loc>
-  <lastmod>2022-05-22T12:28:00Z</lastmod>
+  <lastmod>2022-06-15T20:03:00Z</lastmod>
  </url>
  <url>
   <loc>https://izakharau.me/posts/product-manager-year-one/</loc>
-  <lastmod>2022-05-22T12:28:00Z</lastmod>
+  <lastmod>2022-06-15T20:03:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://izakharau.me/posts/sidekick-product/</loc>
+  <lastmod>2022-06-15T20:03:00Z</lastmod>
  </url>
  <url>
   <loc>https://izakharau.me/posts/tips-for-junior-ba-interview/</loc>
-  <lastmod>2022-05-22T12:28:00Z</lastmod>
+  <lastmod>2022-06-15T20:03:00Z</lastmod>
  </url>
 </urlset>
