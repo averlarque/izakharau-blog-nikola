@@ -50,7 +50,8 @@ Maybe it is for the best, I don’t know. In another year I will let you know.
 
 Those are not all insights I have got during my first year in a Product Manager’s shoes. And not all of them are as negative as I described above. It just appeared when I started writing this piece that the most pessimistic things appeared on the plate. I have gained a lot of experience and still need additional time to analyze some things. I will be glad to share that with you here.
 
-Take care,
-Ilya Zakharau 
+*Take care,*
+
+*Ilya* 
 
 <small><a href="https://www.vecteezy.com/free-vector/baby">Baby Vectors by Vecteezy</a></small>
