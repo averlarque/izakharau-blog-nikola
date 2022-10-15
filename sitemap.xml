@@ -19,11 +19,19 @@
  </url>
  <url>
   <loc>https://izakharau.me/archive.html</loc>
-  <lastmod>2022-07-31T10:34:00Z</lastmod>
+  <lastmod>2022-10-14T15:52:00Z</lastmod>
  </url>
  <url>
   <loc>https://izakharau.me/categories/</loc>
-  <lastmod>2022-06-15T20:03:00Z</lastmod>
+  <lastmod>2022-10-15T13:16:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://izakharau.me/categories/book/</loc>
+  <lastmod>2022-10-15T13:16:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://izakharau.me/categories/books/</loc>
+  <lastmod>2022-10-15T13:16:00Z</lastmod>
  </url>
  <url>
   <loc>https://izakharau.me/categories/cat_career-path/</loc>
@@ -40,6 +48,10 @@
  <url>
   <loc>https://izakharau.me/categories/cat_system-analysis/</loc>
   <lastmod>2022-06-15T20:03:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://izakharau.me/categories/cat_system-thinking/</loc>
+  <lastmod>2022-10-15T13:16:00Z</lastmod>
  </url>
  <url>
   <loc>https://izakharau.me/galleries/</loc>
@@ -68,6 +80,10 @@
  <url>
   <loc>https://izakharau.me/posts/product-manager-year-one/</loc>
   <lastmod>2022-06-15T20:03:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://izakharau.me/posts/reading-gharajedaghi-system-thinking/</loc>
+  <lastmod>2022-10-14T15:52:00Z</lastmod>
  </url>
  <url>
   <loc>https://izakharau.me/posts/sidekick-product/</loc>
