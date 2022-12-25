@@ -3,7 +3,7 @@
 .. slug: reading-gharajedaghi-system-thinking
 .. date: 2022-10-15 14:45:39 UTC+02:00
 .. tags: Books
-.. category: System Thinking
+.. category: Career Development
 .. link: 
 .. description: 
 .. type: text

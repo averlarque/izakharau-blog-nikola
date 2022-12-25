@@ -6,43 +6,55 @@
     xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <sitemap>
-  <loc>https://izakharau.me/categories/book.xml</loc>
-  <lastmod>2022-10-15T13:16:00Z</lastmod>
+  <loc>https://izakharau.me/categories/books.xml</loc>
+  <lastmod>2022-12-25T16:08:00Z</lastmod>
  </sitemap>
  <sitemap>
-  <loc>https://izakharau.me/categories/books.xml</loc>
-  <lastmod>2022-10-15T13:16:00Z</lastmod>
+  <loc>https://izakharau.me/categories/cat_api.xml</loc>
+  <lastmod>2022-12-25T16:08:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>https://izakharau.me/categories/cat_business-analysis.xml</loc>
+  <lastmod>2022-12-25T16:08:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>https://izakharau.me/categories/cat_career-development.xml</loc>
+  <lastmod>2022-12-25T16:08:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://izakharau.me/categories/cat_career-path.xml</loc>
-  <lastmod>2022-06-15T20:03:00Z</lastmod>
+  <lastmod>2022-12-25T15:58:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://izakharau.me/categories/cat_product-development.xml</loc>
-  <lastmod>2022-06-15T20:03:00Z</lastmod>
+  <lastmod>2022-12-25T15:58:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://izakharau.me/categories/cat_product-management.xml</loc>
-  <lastmod>2022-07-31T10:37:00Z</lastmod>
+  <lastmod>2022-12-25T16:08:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>https://izakharau.me/categories/cat_product-ownership.xml</loc>
+  <lastmod>2022-12-25T16:08:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://izakharau.me/categories/cat_system-analysis.xml</loc>
-  <lastmod>2022-06-15T20:03:00Z</lastmod>
+  <lastmod>2022-12-25T15:58:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://izakharau.me/categories/cat_system-thinking.xml</loc>
-  <lastmod>2022-10-15T13:16:00Z</lastmod>
+  <lastmod>2022-12-25T15:58:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://izakharau.me/galleries/rss.xml</loc>
-  <lastmod>2022-06-15T20:03:00Z</lastmod>
+  <lastmod>2022-12-25T16:08:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://izakharau.me/rss.xml</loc>
-  <lastmod>2022-10-15T13:16:00Z</lastmod>
+  <lastmod>2022-12-25T16:08:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://izakharau.me/sitemap.xml</loc>
-  <lastmod>2022-10-15T13:16:00Z</lastmod>
+  <lastmod>2022-12-25T16:08:00Z</lastmod>
  </sitemap>
 </sitemapindex>

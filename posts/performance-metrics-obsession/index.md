@@ -3,7 +3,7 @@
 .. slug: performance-metrics-obsession
 .. date: 2022-07-31 11:48:26 UTC+02:00
 .. tags: 
-.. category: Product Management
+.. category: Product Ownership
 .. link: 
 .. description: 
 .. type: text

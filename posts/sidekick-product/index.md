@@ -91,6 +91,3 @@ Next time I will share with you a real case of such a Sidekick. Stay tuned!
 *Ilya*
 
 <small><a href="https://www.vecteezy.com/free-vector/happy">Happy Vectors by Vecteezy</a></small>
-
-
-

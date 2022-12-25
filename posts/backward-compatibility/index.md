@@ -3,7 +3,7 @@
 .. slug: backward-compatibility
 .. date: 2021-04-26 15:30
 .. tags: 
-.. category: Product Development
+.. category: API
 .. link: 
 .. description: 
 .. type: text
@@ -29,7 +29,6 @@ In the short or mid-term, it is always a non-planned job to do. Opposite to new 
 Taking user experience as an example, it means drastic changes in the way how users interact with the system. So they need additional efforts to learn and adapt on how to use the functionality again.
 
 In terms of software development, that means additional work hours to change the source code in compliance with the breaking changes. And the cost of such changes is relatively high. At the very least there is a BA who assesses the impact of changes, a Dev to investigate required changes and implement them, a QA to verify the changes and do one more round of regression test. Sounds pretty demanding, isn’t it? And that largely depends on the scope of the breaking changes. And this work usually is not planned. Customers’ teams need to change their original plans which can raise the risks.
-
 
 A frustrated end-user of the app with a new radical UX can stop using this app and switch to a competitor. That is not always the case when we talk about integrations. Concerned service can be a vital part of business processes and it is not possible to drop it in a moment and switch to another one. That can be a vendor lock-in or in-house service. Anyway, the cost of switching to another service is always higher than the cost of implementing the breaking changes.
 
