@@ -3,7 +3,7 @@
 .. slug: tips-for-junior-ba-interview
 .. date: 2022-02-06 19:05
 .. tags: 
-.. category: Career Path
+.. category: Business Analysis
 .. link: 
 .. description: 
 .. type: text

@@ -17,7 +17,7 @@ import time
 
 # Data about this site
 BLOG_AUTHOR = "Ilya Zakharau"  # (translatable)
-BLOG_TITLE = "IZAKHARAU.ME"  # (translatable)
+BLOG_TITLE = "Ilya Zakharau's Blog"  # (translatable)
 # This is the main URL for your site. It will be used
 # in a prominent link. Don't forget the protocol (http/https)!
 SITE_URL = "https://izakharau.me/"
@@ -25,7 +25,7 @@ SITE_URL = "https://izakharau.me/"
 # If not set, defaults to SITE_URL
 # BASE_URL = "https://izakharau.me/"
 BLOG_EMAIL = "ilya.zakharau@gmail.com"
-BLOG_DESCRIPTION = "Personal essays about Product Management & Business Analysis in the Enterprise world"  # (translatable)
+BLOG_DESCRIPTION = "Essays about APIs, No-code, and Product Management in the Enterprises"  # (translatable)
 
 # Nikola is multilingual!
 #
@@ -147,8 +147,7 @@ NAVIGATION_LINKS = {
         ("/categories/", "Categories"),
         ("/archive.html", "Archive"),
         ("/rss.xml", "RSS feed"),
-        ("https://www.linkedin.com/in/ilya-zakharau/", "My LinkedIn"),
-        ("https://github.com/averlarque", "My GitHub")
+        ("https://www.linkedin.com/in/ilya-zakharau/", "My LinkedIn")
     ),
 }
 

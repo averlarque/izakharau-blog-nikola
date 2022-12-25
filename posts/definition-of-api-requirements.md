@@ -3,7 +3,7 @@
 .. slug: definition-of-api-requirements
 .. date: 2021-03-30 08:00
 .. tags: 
-.. category: System Analysis
+.. category: API
 .. link: 
 .. description: 
 .. type: text
