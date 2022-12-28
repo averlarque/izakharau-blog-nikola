@@ -19,11 +19,15 @@
  </url>
  <url>
   <loc>https://izakharau.me/archive.html</loc>
-  <lastmod>2022-12-25T16:08:00Z</lastmod>
+  <lastmod>2022-12-27T23:45:00Z</lastmod>
  </url>
  <url>
   <loc>https://izakharau.me/categories/</loc>
-  <lastmod>2022-12-25T16:08:00Z</lastmod>
+  <lastmod>2022-12-26T22:57:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://izakharau.me/categories/api-design/</loc>
+  <lastmod>2022-12-26T22:57:00Z</lastmod>
  </url>
  <url>
   <loc>https://izakharau.me/categories/books/</loc>
@@ -42,28 +46,12 @@
   <lastmod>2022-12-25T16:08:00Z</lastmod>
  </url>
  <url>
-  <loc>https://izakharau.me/categories/cat_career-path/</loc>
-  <lastmod>2022-06-15T20:03:00Z</lastmod>
- </url>
- <url>
-  <loc>https://izakharau.me/categories/cat_product-development/</loc>
-  <lastmod>2022-06-15T20:03:00Z</lastmod>
- </url>
- <url>
   <loc>https://izakharau.me/categories/cat_product-management/</loc>
   <lastmod>2022-06-15T20:03:00Z</lastmod>
  </url>
  <url>
   <loc>https://izakharau.me/categories/cat_product-ownership/</loc>
   <lastmod>2022-12-25T16:08:00Z</lastmod>
- </url>
- <url>
-  <loc>https://izakharau.me/categories/cat_system-analysis/</loc>
-  <lastmod>2022-06-15T20:03:00Z</lastmod>
- </url>
- <url>
-  <loc>https://izakharau.me/categories/cat_system-thinking/</loc>
-  <lastmod>2022-10-15T13:16:00Z</lastmod>
  </url>
  <url>
   <loc>https://izakharau.me/galleries/</loc>
@@ -76,6 +64,18 @@
  <url>
   <loc>https://izakharau.me/pages/about/</loc>
   <lastmod>2022-06-15T20:03:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://izakharau.me/pages/api-design/</loc>
+  <lastmod>2022-12-27T23:45:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://izakharau.me/posts/api-design-first/</loc>
+  <lastmod>2022-12-26T22:57:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://izakharau.me/posts/api-design-tooling/</loc>
+  <lastmod>2022-12-27T22:18:00Z</lastmod>
  </url>
  <url>
   <loc>https://izakharau.me/posts/backward-compatibility/</loc>
