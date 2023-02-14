@@ -25,7 +25,7 @@ SITE_URL = "https://izakharau.me/"
 # If not set, defaults to SITE_URL
 # BASE_URL = "https://izakharau.me/"
 BLOG_EMAIL = "ilya.zakharau@gmail.com"
-BLOG_DESCRIPTION = "Essays about APIs, No-code, and Product Management in the Enterprises"  # (translatable)
+BLOG_DESCRIPTION = "Essays about APIs, No-code, and Product Management in Enterprises"  # (translatable)
 
 # Nikola is multilingual!
 #
@@ -144,7 +144,7 @@ NAVIGATION_LINKS = {
     DEFAULT_LANG: (
         ("/", "Main"),
         ("/pages/about", "About"),
-        ("/pages/api-design", "API Design"),
+        ("/pages/api-design", "API Design Series"),
         ("/categories/", "Categories"),
         ("/archive.html", "Archive"),
         ("/rss.xml", "RSS feed"),

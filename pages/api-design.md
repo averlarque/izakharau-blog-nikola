@@ -1,5 +1,5 @@
 <!--
-.. title: API Design
+.. title: API Design Series
 .. slug: api-design
 .. category: API
 .. type: text
@@ -12,6 +12,10 @@ The enhanced version is more structured and has better language. Also, I rewrote
 I decided to choose a more common term, API design, to entitle the series. Because of that, the series with a few articles might get more content in the future.
 
 It will be helpful for those Business Analysts, Product Owners, and Product Managers who want to learn more about API design concepts, tools, and find useful materials to continue the study.
+
+# [Part 0. Definition of API Requirements](/posts/definition-of-api-requirements-v2)
+
+An introduction to the API topic from the requirements perspective.
 
 # [Part 1. API Design-First](/posts/api-design-first)
 

@@ -9,7 +9,10 @@
 .. type: text
 -->
 
-<img src="/images/api.jpg" width="90%" alt=API style="vertical-align:middle;margin:1% 1%"><br>
+<img src="/images/api.jpg" width="90%" alt=API style="vertical-align:middle;margin:1% 1%">
+
+*There is a [2nd revision of this article](/posts/definition-of-api-requirements-v2), so please read it instead. This, as my first published post in this blog, will stay here as a reminder of my bad writing.*
+
 At some point in my career, I faced a need to specify requirements for API. Those were not typical solution requirements I worked on before. I learned about the API layer which is very common among the enterprise systems. It can hide a set of microservices or a legacy system from the outer world. Like any other system, it is also impacted by stakeholders' needs. And those needs have to be translated into requirements.
 
 We are going to decompose the definition of API requirements and see what lies within. I will pay your attention to what should be taken into consideration for the API layer. It is an introduction to this topic as there are other sides of it to explore further.
