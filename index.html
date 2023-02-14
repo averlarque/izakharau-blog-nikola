@@ -8,14 +8,14 @@
 
   gtag('config', 'G-SPLFYJKKZG');
 </script><meta charset="utf-8">
-<meta name="description" content="Essays about APIs, No-code, and Product Management in the Enterprises">
+<meta name="description" content="Essays about APIs, No-code, and Product Management in Enterprises">
 <meta name="viewport" content="width=device-width">
 <title>Ilya Zakharau's Blog | Ilya Zakharau's Blog</title>
 <link href="assets/css/all.css" rel="stylesheet" type="text/css">
 <link rel="stylesheet" href="//fonts.googleapis.com/css?family=PT+Serif:400,400italic,700%7CPT+Sans:400">
 <link rel="alternate" type="application/rss+xml" title="RSS" href="rss.xml">
 <link rel="canonical" href="https://izakharau.me/">
-<!--[if lt IE 9]><script src="assets/js/html5.js"></script><![endif]--><link rel="prefetch" href="posts/api-design-tooling/" type="text/html">
+<!--[if lt IE 9]><script src="assets/js/html5.js"></script><![endif]--><link rel="prefetch" href="posts/definition-of-api-requirements-v2/" type="text/html">
 </head>
 <body class="theme-base-0c">
     <a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
@@ -23,12 +23,12 @@
             styles, `#sidebar-checkbox` for behavior. -->
     <input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox"><!-- Toggleable sidebar --><div class="sidebar" id="sidebar">
         <div class="sidebar-item">
-            <p><b>Essays about APIs, No-code, and Product Management in the Enterprises</b></p>
+            <p><b>Essays about APIs, No-code, and Product Management in Enterprises</b></p>
         </div>
         
     <nav id="menu" role="navigation" class="sidebar-nav"><a class="sidebar-nav-item" href=".">Main</a>
         <a class="sidebar-nav-item" href="pages/about">About</a>
-        <a class="sidebar-nav-item" href="pages/api-design">API Design</a>
+        <a class="sidebar-nav-item" href="pages/api-design">API Design Series</a>
         <a class="sidebar-nav-item" href="categories/">Categories</a>
         <a class="sidebar-nav-item" href="archive.html">Archive</a>
         <a class="sidebar-nav-item" href="rss.xml">RSS feed</a>
@@ -55,7 +55,21 @@
         
 
 <div class="posts">
-    <article class="post h-entry post-text"><header><h1 class="post-title p-name"><a href="posts/api-design-tooling/" class="u-url">API Design Tooling</a></h1>
+    <article class="post h-entry post-text"><header><h1 class="post-title p-name"><a href="posts/definition-of-api-requirements-v2/" class="u-url">Definition of API Requirements v2</a></h1>
+        <div class="metadata">
+            <!--<p class="byline author vcard"><span class="byline-name fn">Ilya Zakharau</span></p>-->
+            <p class="dateline"><a href="posts/definition-of-api-requirements-v2/" rel="bookmark"><time class="post-date published dt-published" datetime="2023-02-14T22:07:00+01:00" title="2023-02-14 22:07">2023-02-14 22:07</time></a></p>
+        </div>
+    </header><div class="p-summary entry-summary">
+    <div>
+<p><img src="images/api-image.jpeg" alt="API"></p>
+<p>Requirements definition for APIs is not a standard part of the Business Analysis activities in software development. Usually, API design was a single responsibility of a system architect or a developer, considering implementation subject matter experts.</p>
+<p>During my BA career, I had to deal with API-specific requirements. I realized that the API layer has stakeholders (aka consumers) who have their needs related to APIs provided by a system-of-interest. And those needs should be analyzed and translated into requirements.</p>
+<p>The goal of this essay is to give an introduction to the definition of API requirements for my fellow Business Analysts, Product Owner, and Product Managers.</p>
+<p class="more"><a href="posts/definition-of-api-requirements-v2/">Read more…</a></p>
+</div>
+    </div>
+    </article><article class="post h-entry post-text"><header><h1 class="post-title p-name"><a href="posts/api-design-tooling/" class="u-url">API Design Tooling</a></h1>
         <div class="metadata">
             <!--<p class="byline author vcard"><span class="byline-name fn">Ilya Zakharau</span></p>-->
             <p class="dateline"><a href="posts/api-design-tooling/" rel="bookmark"><time class="post-date published dt-published" datetime="2022-12-27T23:15:30+01:00" title="2022-12-27 23:15">2022-12-27 23:15</time></a></p>
@@ -188,8 +202,9 @@ When you are responsible for services widely used by other teams inside and part
         </div>
     </header><div class="p-summary entry-summary">
     <div>
-<p><img src="images/api.jpg" width="90%" alt="API" style="vertical-align:middle;margin:1% 1%"><br>
-At some point in my career, I faced a need to specify requirements for API. Those were not typical solution requirements I worked on before. I learned about the API layer which is very common among the enterprise systems. It can hide a set of microservices or a legacy system from the outer world. Like any other system, it is also impacted by stakeholders' needs. And those needs have to be translated into requirements.</p>
+<p><img src="images/api.jpg" width="90%" alt="API" style="vertical-align:middle;margin:1% 1%"></p>
+<p><em>There is a <a href="posts/definition-of-api-requirements-v2">2nd revision of this article</a>, so please read it instead. This, as my first published post in this blog, will stay here as a reminder of my bad writing.</em></p>
+<p>At some point in my career, I faced a need to specify requirements for API. Those were not typical solution requirements I worked on before. I learned about the API layer which is very common among the enterprise systems. It can hide a set of microservices or a legacy system from the outer world. Like any other system, it is also impacted by stakeholders' needs. And those needs have to be translated into requirements.</p>
 <p>We are going to decompose the definition of API requirements and see what lies within. I will pay your attention to what should be taken into consideration for the API layer. It is an introduction to this topic as there are other sides of it to explore further.</p>
 <p class="more"><a href="posts/definition-of-api-requirements/">Read more…</a></p>
 </div>
@@ -208,7 +223,7 @@ At some point in my career, I faced a need to specify requirements for API. Thos
 
 
         
-        <footer id="footer"><p>Contents © 2021-2022         <a href="mailto:ilya.zakharau@gmail.com">Ilya Zakharau</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         
+        <footer id="footer"><p>Contents © 2021-2023         <a href="mailto:ilya.zakharau@gmail.com">Ilya Zakharau</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         
 <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">
 <img alt="Creative Commons License BY-NC-SA" style="border-width:0; margin-bottom:12px;" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png"></a></p>
             
