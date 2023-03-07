@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html prefix="" lang="en">
+<head>
+<!-- Global site tag (gtag.js) - Google Analytics --><script async src="https://www.googletagmanager.com/gtag/js?id=G-SPLFYJKKZG"></script><script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-SPLFYJKKZG');
+</script><meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>Non-functional Requirements and API | Ilya Zakharau's Blog</title>
+<link href="../../assets/css/all.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=PT+Serif:400,400italic,700%7CPT+Sans:400">
+<link rel="alternate" type="application/rss+xml" title="RSS" href="../../rss.xml">
+<link rel="canonical" href="https://izakharau.me/posts/non-functional-requirements-and-api/">
+<!--[if lt IE 9]><script src="../../assets/js/html5.js"></script><![endif]--><meta name="author" content="Ilya Zakharau">
+<link rel="prev" href="../definition-of-api-requirements-v2/" title="Definition of API Requirements v2" type="text/html">
+<meta property="og:site_name" content="Ilya Zakharau's Blog">
+<meta property="og:title" content="Non-functional Requirements and API">
+<meta property="og:url" content="https://izakharau.me/posts/non-functional-requirements-and-api/">
+<meta property="og:description" content="Previously we discussed the notion of requirements for APIs. Now let's talk specifically about their quality attributes. Or how we can refer to them: non-functional requirements.
+When we use the term ">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2023-03-07T21:43:06+01:00">
+<meta property="article:tag" content="API Design">
+</head>
+<body class="theme-base-0c">
+    <a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
+    <!-- Target for toggling the sidebar `.sidebar-checkbox` is for regular
+            styles, `#sidebar-checkbox` for behavior. -->
+    <input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox"><!-- Toggleable sidebar --><div class="sidebar" id="sidebar">
+        <div class="sidebar-item">
+            <p><b>Essays about APIs, No-code, and Product Management in Enterprises</b></p>
+        </div>
+        
+    <nav id="menu" role="navigation" class="sidebar-nav"><a class="sidebar-nav-item" href="../../">Main</a>
+        <a class="sidebar-nav-item" href="../../pages/about">About</a>
+        <a class="sidebar-nav-item" href="../../pages/api-design">API Design Series</a>
+        <a class="sidebar-nav-item" href="../../categories/">Categories</a>
+        <a class="sidebar-nav-item" href="../../archive.html">Archive</a>
+        <a class="sidebar-nav-item" href="../../rss.xml">RSS feed</a>
+        <a class="sidebar-nav-item" href="https://www.linkedin.com/in/ilya-zakharau/">My LinkedIn</a>
+    
+    
+    </nav>
+</div>
+
+    <!-- Wrap is the content to shift when toggling the sidebar. We wrap the
+         content to avoid any CSS collisions with our real content. -->
+    <div class="wrap">
+      <div class="masthead">
+        <div class="container">
+          
+    <h3 id="brand" class="masthead-title">
+      <a href="https://izakharau.me/" title="Ilya Zakharau's Blog" rel="home">Ilya Zakharau's Blog</a>
+    </h3>
+
+        </div>
+      </div>
+
+      <div class="container content" id="content">
+        
+<article class="post-text h-entry hentry postpage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="post-title p-name entry-title" itemprop="headline name"><a href="." class="u-url">Non-functional Requirements and API</a></h1>
+
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn">Ilya Zakharau</span></p>
+            <p class="dateline"><a href="." rel="bookmark"><time class="post-date published dt-published" datetime="2023-03-07T21:43:06+01:00" itemprop="datePublished" title="2023-03-07 21:43">2023-03-07 21:43</time></a></p>
+        </div>
+        
+
+    </header><div class="e-content entry-content" itemprop="articleBody text">
+    <p><img src="../../images/non-functional-api.png" alt="Slides from API Workshop about Non-functional requirements"></p>
+<p><a href="../definition-of-api-requirements-v2">Previously</a> we discussed the notion of requirements for APIs. Now let's talk specifically about their quality attributes. Or how we can refer to them: non-functional requirements.</p>
+<p>When we use the term "non-functional requirements," we imply that there should be "functional requirements" as well. What is a functional requirement for an API endpoint? Return a response based on the provided input data. It sounds oversimplified, but this is how it is.</p>
+<p>In detaching API from the functionality, meaning we have a variety of APIs for different consumers, I like an association with a "door."<!-- TEASER_END --> Despite any context, the primary function of a door is to change its state from closed to open and vice versa. The door can be built from different materials, and it can be opened by various means. The opened door can lead to different locations. But its primary function remains the same. We are not considering it as a weapon, even if you hit someone by a door (accidentally, I believe).</p>
+<p>However, the quality of that door matters, and the same we apply to API. There are dozens of non-functional characteristics, so we only look at major ones.</p>
+<h2>Security</h2>
+<p>A banking term KYC (Know Your Customer) also works for APIs. Whether it is an internal, partner, or public API, we need to do the following:</p>
+<ul>
+<li>Onboarding - provide means for a consumer to start.</li>
+<li>Authentication - identify your consumer.</li>
+<li>Authorization - manage the access level.</li>
+<li>Offboarding - terminate consumer access.</li>
+</ul>
+<p>We must prevent unauthorized access to our system with API and avoid leaking sensitive information that can damage business and infrastructure. The latter is also relevant for authorized users: we don't want to expose some technical details of how the system works or any data not related to a particular consumer.</p>
+<p>API is a vulnerable place, so there are dozens, if not hundreds, of books and other materials related to security measures and approaches. Using JWT (JSON Web Tokens) tokens is the most common approach nowadays. I don't cover this extensive topic in this article, so I just suggest some reading:</p>
+<ul>
+<li><a href="https://jwt.io/introduction">About a token itself</a></li>
+<li><a href="https://auth0.com/blog/refresh-tokens-what-are-they-and-when-to-use-them/">About token types</a></li>
+</ul>
+<p>Security must be an essential part of the Architecture design from the beginning. It should cover everything exposed in the API layer, not just a single endpoint.  </p>
+<h2>Reliability</h2>
+<p>What happens if something goes wrong? Getting a successful response is not always the case, so we must consider every possible issue.</p>
+<p>The first is what we return to consumers: error codes and their messages. API should return a meaningful error message so a consumer can understand what happened and what they should do to get a successful result with the next call. </p>
+<p>There are 4xx and 5xx <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Status">HTTP status codes</a>, so you don't need to reinvent the wheel. The best practice is to have an Errors template with common cases such as 401, 404, and 500, with the possibility of extending them with custom errors. The custom errors should still be based on the HTTP status codes, so pick the code wisely.</p>
+<p>There is a classic case with the codes: if a Search API does not find any result, it should return 404 (Not found) or 200 (OK).</p>
+<p>One more area is error resilience: what happens if something goes wrong in the request logic? For example, your API call is trying to reach a currently unavailable service. There are several scenarios for the so-called <a href="https://martinfowler.com/bliki/CircuitBreaker.html">Circuit Breaker</a>:</p>
+<ul>
+<li>Throw an error immediately.</li>
+<li>Try several times.</li>
+<li>Use a plan B to reach a duplicate of that service after trying several times.</li>
+</ul>
+<p>Another issue is with composite API: you should make two requests to aggregate data across different services. One responded, another didn't. Your composite API can return an error. Or it can return partial or even mock data. But remember to notify a consumer that data needs to be completed.</p>
+<p>A weak point of composite API requests is transaction consistency. When an API endpoint triggers an update operation in several services, an issue may occur if some service does not proceed. Ideally, we have to cancel an entire transaction and re-write the already updated data. But in practice, it may be tricky as those changes appear in the history of system changes, or you simply don't know how to revert it.</p>
+<h2>Performance</h2>
+<p>Sometimes it isn't easy to separate system performance from API performance. But it becomes a crucial element if we are talking about a separate layer as API Gateway. Acting as a proxy or orchestrator, it must process requests and respond quickly.</p>
+<p>Performance is another weak point for composite APIs. More internal calls we make than more performance may suffer. We can't control how quickly other services will respond (or will they respond at all).</p>
+<p>But first of all, we need to understand the criteria to measure API performance: request payload, testing environment, available resources for services similar to production, what we consider as low performance, etc. Performance testing should become a routine, not something done during a release.</p>
+<h2>Usability</h2>
+<p>Developers who will integrate with your API are your direct users. So you need to care about <a href="https://microsoft.github.io/code-with-engineering-playbook/developer-experience/">Developer Experience (DX)</a>. For API, it matters to follow the best industry practices, not to confuse the developers, and provide meaningful documentation.</p>
+<p>API documentation is essential to onboard developers and help them use your API effectively. If they ask you questions, you need to consider further improvements.</p>
+<p>API docs (API references) can be autogenerated, produced manually, or combined with these two approaches. The key point is to define the required components and the formatting. For example, an API must have a summary with 2-3 words using a verb ("Make Americano") and a description with more information ("To trigger making of a small cup of Americano without milk"). Every request/response attribute must also have a description and example ("machineId" - unique identifier of a remote coffee machine, "edtu-1234-as34-1234").</p>
+<h2>Maintainability</h2>
+<p>I would instead call it API contract persistence. Both sides must respect the contract, but only the owner can change it. As soon as your API is published, making changes can be problematic.</p>
+<p>Deploying an API endpoint and never changing it is not possible. An imperative "Don't break API contract" impacts how you will support it. If the initial design is bad, changes will likely introduce backward incompatibility. So if you release a new incremental version, consumers will have to keep up with the changes on their side.</p>
+<p>I already wrote an essay on that topic (<a href="../backward-compatibility">link</a>), so I will not repeat its points. From the quality perspective, we must consider how we will maintain the API in the future.</p>
+<h2>Compliance</h2>
+<p>Don't be surprised that API is a subject of compliance. And it is not limited to organization or industry standards. In some cases, especially for finance and health, regulatory standards need to be addressed depending on the region of operation. Here are two sources to dive into that topic:</p>
+<ul>
+<li><a href="https://www.traceable.ai/blog-post/achieve-api-compliance">API compliance</a></li>
+<li><a href="https://nordicapis.com/7-global-open-banking-standards/">Global Open Banking standards</a></li>
+</ul>
+<h2>Summary</h2>
+<p>When defining requirements and design for API, you need to take into account its quality attributes, also known as non-functional requirements in the Business Analysis world. They are usually in the shadow of exciting system functionality. But if not addressed from the beginning, both parties will suffer, one from using that API and another from maintaining it. So let's agree that quality comes first.</p>
+<p><em>Take care,</em></p>
+<p><em>Ilya</em></p>
+    </div>
+    <aside class="postpromonav"><nav><ul itemprop="keywords" class="tags">
+<li><a class="tag p-category" href="../../categories/api-design/" rel="tag">API Design</a></li>
+        </ul>
+<ul class="pager hidden-print">
+<li class="previous">
+                <a href="../definition-of-api-requirements-v2/" rel="prev" title="Definition of API Requirements v2">Previous post</a>
+            </li>
+        </ul></nav></aside></article><footer id="footer"><p>Contents © 2021-2023         <a href="mailto:ilya.zakharau@gmail.com">Ilya Zakharau</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         
+<a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">
+<img alt="Creative Commons License BY-NC-SA" style="border-width:0; margin-bottom:12px;" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png"></a></p>
+            
+        </footer>
+</div>
+    </div>
+    <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+    
+    
+    
+            <script src="../../assets/js/all-nocdn.js"></script><!-- fancy dates --><script>
+    moment.locale("en");
+    fancydates(0, "YYYY-MM-DD HH:mm");
+    </script><!-- end fancy dates -->
+</body>
+</html>

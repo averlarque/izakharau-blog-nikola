@@ -7,7 +7,7 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <sitemap>
   <loc>https://izakharau.me/categories/api-design.xml</loc>
-  <lastmod>2023-02-14T21:42:00Z</lastmod>
+  <lastmod>2023-03-07T20:59:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://izakharau.me/categories/books.xml</loc>
@@ -15,7 +15,7 @@
  </sitemap>
  <sitemap>
   <loc>https://izakharau.me/categories/cat_api.xml</loc>
-  <lastmod>2023-02-14T21:42:00Z</lastmod>
+  <lastmod>2023-03-07T20:59:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://izakharau.me/categories/cat_business-analysis.xml</loc>
@@ -39,10 +39,10 @@
  </sitemap>
  <sitemap>
   <loc>https://izakharau.me/rss.xml</loc>
-  <lastmod>2023-02-14T21:42:00Z</lastmod>
+  <lastmod>2023-03-07T20:59:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://izakharau.me/sitemap.xml</loc>
-  <lastmod>2023-02-14T21:42:00Z</lastmod>
+  <lastmod>2023-03-07T20:59:00Z</lastmod>
  </sitemap>
 </sitemapindex>
