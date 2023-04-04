@@ -16,7 +16,7 @@
 <link rel="alternate" type="application/rss+xml" title="RSS" href="rss.xml">
 <link rel="canonical" href="https://izakharau.me/">
 <link rel="next" href="index-1.html" type="text/html">
-<!--[if lt IE 9]><script src="assets/js/html5.js"></script><![endif]--><link rel="prefetch" href="posts/non-functional-requirements-and-api/" type="text/html">
+<!--[if lt IE 9]><script src="assets/js/html5.js"></script><![endif]--><link rel="prefetch" href="posts/backward-compatibility/" type="text/html">
 </head>
 <body class="theme-base-0c">
     <a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
@@ -56,7 +56,21 @@
         
 
 <div class="posts">
-    <article class="post h-entry post-text"><header><h1 class="post-title p-name"><a href="posts/non-functional-requirements-and-api/" class="u-url">Non-functional Requirements and API</a></h1>
+    <article class="post h-entry post-text"><header><h1 class="post-title p-name"><a href="posts/backward-compatibility/" class="u-url">Breaking changes &amp; Backward compatibility v2</a></h1>
+        <div class="metadata">
+            <!--<p class="byline author vcard"><span class="byline-name fn">Ilya Zakharau</span></p>-->
+            <p class="dateline"><a href="posts/backward-compatibility/" rel="bookmark"><time class="post-date published dt-published" datetime="2023-04-04T21:30:00+02:00" title="2023-04-04 21:30">2023-04-04 21:30</time></a></p>
+        </div>
+    </header><div class="p-summary entry-summary">
+    <div>
+<p><img src="images/breaking_changes.jpeg" alt="Breaking changes everywhere"></p>
+<p>I learned what backward compatibility means regarding software engineering when I started working on microservices. When you are responsible for services widely used by other teams inside and partners outside, you most likely become paranoid about maintaining backward compatibility of your API as much as possible. Especially when it is a  highly volatile environment with rapidly growing functionality and direction changes on the fly.</p>
+<p>At some point,  I invented the term "backward awkwardability" - an awkward feeling while telling consumers that there are breaking changes in a new release, so they have to migrate. If your team does it frequently, they will say something like, "C'mon guys, you introduced breaking changes just a few iterations before! What's going on?"</p>
+<p>Let's talk about backward compatibility and how to deal with the breaking changes in terms of API.</p>
+<p class="more"><a href="posts/backward-compatibility/">Read more…</a></p>
+</div>
+    </div>
+    </article><article class="post h-entry post-text"><header><h1 class="post-title p-name"><a href="posts/non-functional-requirements-and-api/" class="u-url">Non-functional Requirements and API</a></h1>
         <div class="metadata">
             <!--<p class="byline author vcard"><span class="byline-name fn">Ilya Zakharau</span></p>-->
             <p class="dateline"><a href="posts/non-functional-requirements-and-api/" rel="bookmark"><time class="post-date published dt-published" datetime="2023-03-07T21:43:06+01:00" title="2023-03-07 21:43">2023-03-07 21:43</time></a></p>
@@ -194,20 +208,6 @@ Recently I was looking for a Junior Business Analyst to join my team. I consider
 </ul>
 <p>It is not the same as interviewing a Middle or Senior BA. There is a wide variety of topics you can discuss with more experienced professionals: practical cases, challenges, techniques, recent articles, etc. But that is hardly applicable for the Juniors as they can share only their background, knowledge of theory with the ability to apply that in practice. At the very least.</p>
 <p class="more"><a href="posts/tips-for-junior-ba-interview/">Read more…</a></p>
-</div>
-    </div>
-    </article><article class="post h-entry post-text"><header><h1 class="post-title p-name"><a href="posts/backward-compatibility/" class="u-url">“Backward awkwardability” or how to break compatibility and stop worrying</a></h1>
-        <div class="metadata">
-            <!--<p class="byline author vcard"><span class="byline-name fn">Ilya Zakharau</span></p>-->
-            <p class="dateline"><a href="posts/backward-compatibility/" rel="bookmark"><time class="post-date published dt-published" datetime="2021-04-26T15:30:00+02:00" title="2021-04-26 15:30">2021-04-26 15:30</time></a></p>
-        </div>
-    </header><div class="p-summary entry-summary">
-    <div>
-<p><img src="images/breaking_changes.jpeg" width="90%" alt="Breaking changes everywhere" style="vertical-align:middle;margin:1% 1%"><br>
-When you are responsible for services widely used by other teams inside and partners outside, you most likely become paranoid about maintaining backward compatibility of your API as much as possible. I had no idea about what backward compatibility means in terms of software engineering until I started working on microservices. Those microservices were important for the organization’s success. And in the same time that was a highly volatile environment with rapidly growing functionality and direction changes on the fly.</p>
-<p>Back then, I invented the term “backward awkwardability”: when you feel awkward while telling your customers that an upcoming release is not compatible with a previous so they have some work to do. They say something like: “C’mon guys, you introduced breaking changes just a few iterations before! What’s going on?” Ugh, each time I feel sick just remembering those situations.</p>
-<p>So we are going to talk about the nature of backward compatibility and how to deal with the breaking changes in terms of API.</p>
-<p class="more"><a href="posts/backward-compatibility/">Read more…</a></p>
 </div>
     </div>
     </article>
