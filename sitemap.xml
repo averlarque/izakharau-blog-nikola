@@ -23,11 +23,11 @@
  </url>
  <url>
   <loc>https://izakharau.me/archive.html</loc>
-  <lastmod>2023-04-04T19:43:00Z</lastmod>
+  <lastmod>2023-05-09T19:39:00Z</lastmod>
  </url>
  <url>
   <loc>https://izakharau.me/categories/</loc>
-  <lastmod>2023-04-04T18:20:00Z</lastmod>
+  <lastmod>2023-05-09T19:39:00Z</lastmod>
  </url>
  <url>
   <loc>https://izakharau.me/categories/api-design/</loc>
@@ -36,6 +36,10 @@
  <url>
   <loc>https://izakharau.me/categories/books/</loc>
   <lastmod>2023-04-04T18:20:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://izakharau.me/categories/cat_announcement/</loc>
+  <lastmod>2023-05-09T19:39:00Z</lastmod>
  </url>
  <url>
   <loc>https://izakharau.me/categories/cat_api/</loc>
@@ -59,7 +63,7 @@
  </url>
  <url>
   <loc>https://izakharau.me/index-1.html</loc>
-  <lastmod>2023-04-04T18:20:00Z</lastmod>
+  <lastmod>2023-05-09T19:39:00Z</lastmod>
  </url>
  <url>
   <loc>https://izakharau.me/pages/about/</loc>
@@ -112,5 +116,9 @@
  <url>
   <loc>https://izakharau.me/posts/tips-for-junior-ba-interview/</loc>
   <lastmod>2023-04-04T18:20:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://izakharau.me/posts/updates-on-content-strategy/</loc>
+  <lastmod>2023-05-09T19:39:00Z</lastmod>
  </url>
 </urlset>
